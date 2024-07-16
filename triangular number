@@ -1,0 +1,31 @@
+import java.util.*;
+class main
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    long n=sc.nextLong();
+    boolean isTriangular=false;
+    int x=1;
+    long triangularNumber=0;
+    while(triangularNumber<=n)
+    {
+      triangularNumber=x*(x+1L)/2;
+      if(triangularNumber==n)
+      {
+        isTriangular=true;
+        break;
+      }
+      x++;
+    }
+    if(isTriangular)
+    {
+      System.out.print("Triangular Number");
+    }
+    else
+    {
+      System.out.print("Not a Triangular Number");
+    }
+      
+  }
+}
