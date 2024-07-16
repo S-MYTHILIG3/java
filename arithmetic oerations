@@ -1,0 +1,17 @@
+import java.util.*;
+class test
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    int num1=sc.nextInt();
+    int num2=sc.nextInt();
+    int s,d,p,q,r;
+    s=num1+num2;
+    d=num1-num2;
+    p=num1*num2;
+    q=num1/num2;
+    r=num1%num2;
+    System.out.printf("%d %d %d %d %d ",s,d,p,q,r);
+  }
+}
