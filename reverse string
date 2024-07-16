@@ -1,0 +1,31 @@
+import java.util.*;
+class sample
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    String str=sc.nextLine();
+    String rev="";
+    for(int i=str.length()-1;i>=0;i--)
+    {
+      char ch=str.charAt(i);
+      if(ch>='a' && ch<='z')
+      {
+        rev+=ch;
+      }
+    }
+    StringBuilder r=new StringBuilder();
+    int revind=0;
+    for(int i=0;i<str.length();i++)
+    {
+      char ch=str.charAt(i);
+      if(ch>='a' && ch<='z')
+      {
+        r.append(rev.charAt(revind));
+        revind++;
+      }else
+      { r.append(ch);}
+    }
+      System.out.print(r.toString());
+  }
+}
