@@ -1,0 +1,33 @@
+import java.util.*;
+class test
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    int num1=sc.nextInt();
+    int num2=sc.nextInt();
+    int sum1=1,sum2=1,itr;
+    for(itr=2;itr*itr<num1;itr+=1)
+    {
+      if(num1%itr==0)
+      sum1+=(itr+(num1/itr));
+    }
+    for(itr=2;itr*itr<num2;itr+=1)
+    {
+      if(num2%itr==0)
+      sum2+=(itr+(num2/itr));
+    }
+    if(sum1==sum2 && sum2==sum1)
+    {
+      System.out.print("Amicable Pair");
+    }
+    else
+    {
+      System.out.print("Not a Amicable Pair");
+    }
+    
+    
+    
+    
+  }
+}
